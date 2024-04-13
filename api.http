@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo evento2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/08b23b39-3a38-4912-b536-5de6cda6dabb/attendees
+Content-Type: application/json
+
+{
+    "name": "Eduardo Reis",
+    "email": "eduardoreis@edureis.com"
+}
+
+###
+
+GET http://localhost:3333/events/6753d933-b340-4fcc-a9dc-8851b7bda5f3
+
+###
+
+GET http://localhost:3333/attendees/2/badge
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+
+###
+
+GET http://localhost:3333/events/08b23b39-3a38-4912-b536-5de6cda6dabb/attendees
