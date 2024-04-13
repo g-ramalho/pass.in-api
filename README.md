@@ -47,6 +47,11 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
     npx prisma db seed
     ```
 
+4. **Inicialize a aplicação:**
+    ```
+    npm run start
+    ```
+
 ## Documentação da API (Swagger)
 
 Para documentação da API, acesse o link após iniciar a aplicação localmente: http://localhost:3333/docs/
