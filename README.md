@@ -29,17 +29,31 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 - [x] O check-in no evento será realizado através de um QRCode;
 
+## Instruções para teste local
+
+1. **Clone o repositório:**
+   ```
+   git clone https://github.com/g-ramalho/pass.in-api
+   cd pass.in-api
+   ```
+
+2. **Instale as dependências:**
+    ```
+    npm install
+    ```
+
+3. **Use a seed da database:**
+    ```
+    npx prisma db seed
+    ```
+
 ## Documentação da API (Swagger)
 
-Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com/docs
+Para documentação da API, acesse o link após iniciar a aplicação localmente: http://localhost:3333/docs/
 
 ## Banco de dados
 
-Nessa aplicação vamos utilizar banco de dados relacional (SQL). Para ambiente de desenvolvimento seguiremos com o SQLite pela facilidade do ambiente.
-
-### Diagrama ERD
-
-<img src=".github/erd.svg" width="600" alt="Diagrama ERD do banco de dados" />
+Nesta aplicação foi utilizado um banco de dados relacional (SQL). Para ambiente de desenvolvimento, o SQLite foi escolhido pela facilidade do ambiente.
 
 ### Estrutura do banco (SQL)
 
